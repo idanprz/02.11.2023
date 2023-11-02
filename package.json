@@ -18,6 +18,5 @@
   },
   "homepage": "https://github.com/fullstack290623/02.11.2023#readme",
   "dependencies": {
-    "express": "^4.18.2"
   }
 }
