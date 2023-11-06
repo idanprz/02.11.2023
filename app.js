@@ -17,6 +17,11 @@ http.createServer((request, response) => {
         })
         return
     }
+    else if (request.url == '/api/todos/1') {
+        response.writeHead(200, { 'Content-Type': 'application/json' })
+        response.write(`{"id": 1, "task": "learn js"}`)
+        response.end(); //end the response
+    }    
     else if (request.url == '/page1.html') {
         response.writeHead(200, { 'Content-Type': 'text/html' })
         response.write(`<h1 style="color:green">Welcome to my home page</h1>`)
